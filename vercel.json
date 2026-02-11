@@ -1,6 +1,12 @@
 {
-  "framework": "vite",
-  "installCommand": "npm install --prefix vue-manufacturing",
-  "buildCommand": "npm run build --prefix vue-manufacturing",
-  "outputDirectory": "vue-manufacturing/dist"
+  "version": 2,
+  "builds": [
+    {
+      "src": "vue-manufacturing/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ]
 }
