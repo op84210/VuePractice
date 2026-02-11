@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+:root {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #e2e8f0 0%, #f8fafc 45%, #ffffff 100%);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.card {
+  width: min(560px, 100%);
+  padding: 2rem;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: #475569;
+}
+
+.form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.input {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #cbd5f5;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.input:focus {
+  outline: 2px solid #0f172a;
+  outline-offset: 2px;
+  background: #ffffff;
+}
+
+.button {
+  border: none;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0f172a;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.result-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.result-value {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.result-time {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.hint {
+  margin-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
